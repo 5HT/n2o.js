@@ -1,4 +1,4 @@
-try { module.exports = {client:$client}; } catch (e) { }
+module.exports = {client:$client};
 
 // JSON formatter
 

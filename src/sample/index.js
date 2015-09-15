@@ -1,11 +1,11 @@
 module.exports = {events:index};
 
 var matches = require("matches").pattern,
-    bert = require("bert"),
+    bert = require("../bert"),
     tuple = bert.tuple,
     atom = bert.atom,
     bin = bert.bin,
-    wf   = require("wf");
+    wf   = require("../wf");
 
 var index = matches({
     'init' : function () { wf.reg('room'); },

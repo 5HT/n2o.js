@@ -1,4 +1,4 @@
-try { module.exports = {dec:dec,enc:enc}; } catch (e) { }
+module.exports = {dec:dec,enc:enc,tuple:tuple,atom:atom,bin:bin};
 
 // BERT Encoder
 

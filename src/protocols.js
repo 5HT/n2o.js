@@ -1,4 +1,4 @@
-try { module.exports = {protos:$protos}; } catch (e) { }
+module.exports = {protos:$protos};
 
 $protos = [$io,$file,$bin,$heart];
 
