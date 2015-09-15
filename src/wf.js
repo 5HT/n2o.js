@@ -16,6 +16,7 @@ function cache(sid,key,value) {
     $conn.send(enc(tuple(atom('put'),atom('cache'),bin(key),bin(value)))); }
 
 function insert_bottom(sid,element,htm) {
-    js = function() { var div = qn('div'); div.innerHTML = htm;
+    var js = function() { var div = qn('div'); div.innerHTML = htm;
                       qi(element).appendChild(div.firstChild); };
+    js = "(" + js.toString() + ")();";
     $conn.send(enc(tuple(atom('io'),bin(js.toString()),bin('')))); }
