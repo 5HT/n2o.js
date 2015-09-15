@@ -7,6 +7,6 @@
   "repository": { "type": "git", "url": "https://github.com/synrc/n2o.js" },
   "dependencies": { },
   "devDependencies": { },
-  "main": "src/n2o",
+  "main": "src/tcp",
   "engines": { "node": ">=0.10.0" }
 }

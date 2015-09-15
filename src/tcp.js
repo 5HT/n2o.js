@@ -1,4 +1,7 @@
 var net = require('net');
+    bert = require('./bert');
+    client = require('./client');
+    protocols = require('./protocols');
     util = require('util');
 
 var clients = [];
