@@ -1,0 +1,12 @@
+{
+  "name": "n2o.js",
+  "version": "0.1",
+  "description": "N2O remote execution protocol implementation",
+  "author": { "name": "Maxim Sokhatsky", "email": "maxim@synrc.com" },
+  "contributors": [ "Andy Melnikov" ],
+  "repository": { "type": "git", "url": "https://github.com/synrc/n2o.js" },
+  "dependencies": { },
+  "devDependencies": { },
+  "main": "src/n2o",
+  "engines": { "node": ">=0.10.0" }
+}
