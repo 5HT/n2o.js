@@ -10,12 +10,12 @@ var match = require("matches").pattern,
 var index = match({
 
     'init' : function () {
-        wf.reg(this,sid,'room'); },
+        wf.reg('room'); },
 
     '["client",[sid,msg]]' : function (sid,msg) {
-        wf.insert_bottom(this.sid,"history","<span>"+sid+": "+msg+"</span>"); },
+        wf.insert_bottom("history","<span>"+sid+": "+msg+"</span>"); },
 
     '["chat",msg]' : function (msg) {
-        wf.send(this.sid,'room',tuple(atom('client'),tuple(bin(this.sid),bin(msg))))); }
+        wf.send('room',tuple(atom('client'),tuple(bin(this.sid),bin(msg))))); }
 
 });
